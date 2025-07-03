@@ -493,7 +493,7 @@ def myMorphism : FreeGroup S →* Perm (Fin 5) :=
 
 ``Unit`` 类型只有一个元素，表示为
 ``()``. 函数 ``PresentedGroup`` 接受一系列关系,
-(即一系列某个自由群中的元素), 并将这个自由群模去由这些关系(元素)生成的正规子群, 返回得到的商群. (在 :numref:`quotient_groups` 中将展示如何处理更一般的商关系) 为简化定义, 我们使用 ``deriving Group`` to 直接生成 ``myGroup`` 上的群实例.
+(即某个自由群中的一系列元素), 并将这个自由群模去由这些关系(元素)生成的正规子群, 返回得到的商群. (在 :numref:`quotient_groups` 中将展示如何处理更一般的商关系) 为简化定义, 我们使用 ``deriving Group`` to 直接生成 ``myGroup`` 上的群实例.
 EXAMPLES: -/
 -- QUOTE:
 def myGroup := PresentedGroup {.of () ^ 3} deriving Group
